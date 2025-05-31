@@ -1,0 +1,30 @@
+﻿{
+    "Clientes": [
+        {
+            "dpi": "1234567890101",
+            "nombre": "Juan Pérez",
+            "direccion": "Av. Reforma 123, Ciudad",
+            "telefono": "5155-1234"
+        },
+        {
+            "dpi": "9876543210123",
+            "nombre": "Ana Gómez",
+            "direccion": "Calle Central 456, Ciudad",
+            "telefono": "5355-5678"
+        }
+    ],
+    "Tarjetas": [
+        {
+            "id": 1,
+            "clienteDpi": "1234567890101",
+            "numero": "1111-2222-3333-4444",
+            "limite": 5000
+        },
+        {
+            "id": 2,
+            "clienteDpi": "9876543210123",
+            "numero": "5555-6666-7777-8888",
+            "limite": 7000
+        }
+    ]
+}

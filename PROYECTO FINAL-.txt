@@ -1,0 +1,119 @@
+PROYECTO FINAL - SISTEMA DE GESTIÓN DE TARJETAS DE CRÉDITO
+Lenguaje: C#
+Framework: .NET 6
+IDE: Visual Studio 2022
+Tipo de Proyecto: ASP.NET Core Web API
+
+========================================
+🎯 OBJETIVO
+----------------------------------------
+Este proyecto implementa una API REST para la gestión de clientes, tarjetas de crédito y transacciones, utilizando estructuras de datos en memoria como:
+- Árbol binario de búsqueda (ABB)
+- Árbol AVL
+- Tabla hash
+- Lista enlazada
+- Pila
+- Cola
+
+========================================
+📁 ESTRUCTURA DE CARPETAS Y ARCHIVOS
+----------------------------------------
+
+ProyectoFinal/
+├── Controllers/
+│   ├── ClienteC.cs
+│   ├── TarjetaC.cs
+│   └── TransaccionC.cs
+│
+├── Services/
+│   ├── ClienteS.cs
+│   ├── TarjetaS.cs
+│   └── TransaccionS.cs
+│
+├── DataStructures/
+│   ├── ABB.cs
+│   ├── AVL.cs
+│   ├── TablaHash.cs
+│   ├── ListaEnlazada.cs
+│   ├── Pila.cs
+│   └── Cola.cs
+│
+├── Models/
+│   ├── Cliente.cs
+│   ├── TarjetaCredito.cs
+│   └── Transaccion.cs
+│
+├── datos.json  ← archivo de carga inicial (opcional)
+├── ProyectoFinal.csproj
+├── Program.cs
+└── README.txt
+
+========================================
+🚀 INSTRUCCIONES DE USO
+----------------------------------------
+
+1️⃣ ABRIR PROYECTO
+------------------
+- Abrir el archivo `.sln` del proyecto o cargar la carpeta en Visual Studio 2022.
+
+2️⃣ COMPILAR
+------------
+- Presionar `Ctrl + Shift + B` para compilar el proyecto.
+- Asegurarse de que no hay errores.
+
+3️⃣ EJECUTAR
+------------
+- Presionar `F5` o clic en "Iniciar depuración".
+- Se abrirá Swagger UI en tu navegador (`https://localhost:xxxx/swagger`).
+
+4️⃣ PROBAR DESDE SWAGGER
+------------------------
+Desde Swagger podrás:
+- Crear clientes con `POST /api/ClienteC`
+- Crear tarjetas con `POST /api/TarjetaC`
+- Consultar saldo con `GET /api/TarjetaC/{numero}`
+- Realizar pagos y consumos con `POST /api/TransaccionC/pago` y `.../consumo`
+- Consultar historial con `GET /api/TransaccionC/historial/{numeroTarjeta}`
+
+========================================
+📥 CARGA DE DATOS INICIAL (OPCIONAL)
+----------------------------------------
+
+Puedes crear un archivo `datos.json` con la siguiente estructura:
+
+[
+  {
+    "DPI": "1234567890101",
+    "Nombre": "Juan Pérez",
+    "Direccion": "Ciudad Capital",
+    "Telefono": "5555-0000"
+  },
+  {
+    "DPI": "9876543210101",
+    "Nombre": "Ana López",
+    "Direccion": "Zona 10",
+    "Telefono": "5555-1111"
+  }
+]
+
+Para cargarlo automáticamente, puedes implementar un método en `Program.cs` que lea ese JSON y llene los servicios al iniciar.
+
+========================================
+🛠 REQUISITOS DEL SISTEMA
+----------------------------------------
+- Visual Studio 2022
+- .NET 6 SDK instalado
+- Navegador web para probar Swagger (Chrome, Edge, etc.)
+
+========================================
+📌 NOTAS ADICIONALES
+----------------------------------------
+- Las estructuras de datos están implementadas desde cero en C#.
+- El sistema funciona totalmente en memoria (no usa base de datos).
+- El archivo XML de comentarios se genera automáticamente para Swagger.
+
+========================================
+👨‍💻 DESARROLLADOR
+----------------------------------------
+Nombre del estudiante: _______________________
+Carné: _______________________

@@ -1,0 +1,15 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Archivos de compilación
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Otros
+*.cache
+*.log
