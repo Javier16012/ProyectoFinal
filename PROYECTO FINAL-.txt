@@ -5,7 +5,7 @@ IDE: Visual Studio 2022
 Tipo de Proyecto: ASP.NET Core Web API
 
 ========================================
-🎯 OBJETIVO
+OBJETIVO
 ----------------------------------------
 Este proyecto implementa una API REST para la gestión de clientes, tarjetas de crédito y transacciones, utilizando estructuras de datos en memoria como:
 - Árbol binario de búsqueda (ABB)
@@ -16,7 +16,7 @@ Este proyecto implementa una API REST para la gestión de clientes, tarjetas de 
 - Cola
 
 ========================================
-📁 ESTRUCTURA DE CARPETAS Y ARCHIVOS
+ESTRUCTURA DE CARPETAS Y ARCHIVOS
 ----------------------------------------
 
 ProyectoFinal/
@@ -49,24 +49,24 @@ ProyectoFinal/
 └── README.txt
 
 ========================================
-🚀 INSTRUCCIONES DE USO
+INSTRUCCIONES DE USO
 ----------------------------------------
 
-1️⃣ ABRIR PROYECTO
+ABRIR PROYECTO
 ------------------
 - Abrir el archivo `.sln` del proyecto o cargar la carpeta en Visual Studio 2022.
 
-2️⃣ COMPILAR
+COMPILAR
 ------------
 - Presionar `Ctrl + Shift + B` para compilar el proyecto.
 - Asegurarse de que no hay errores.
 
-3️⃣ EJECUTAR
+EJECUTAR
 ------------
 - Presionar `F5` o clic en "Iniciar depuración".
 - Se abrirá Swagger UI en tu navegador (`https://localhost:xxxx/swagger`).
 
-4️⃣ PROBAR DESDE SWAGGER
+PROBAR DESDE SWAGGER
 ------------------------
 Desde Swagger podrás:
 - Crear clientes con `POST /api/ClienteC`
@@ -76,7 +76,7 @@ Desde Swagger podrás:
 - Consultar historial con `GET /api/TransaccionC/historial/{numeroTarjeta}`
 
 ========================================
-📥 CARGA DE DATOS INICIAL (OPCIONAL)
+CARGA DE DATOS INICIAL (OPCIONAL)
 ----------------------------------------
 
 Puedes crear un archivo `datos.json` con la siguiente estructura:
@@ -99,21 +99,21 @@ Puedes crear un archivo `datos.json` con la siguiente estructura:
 Para cargarlo automáticamente, puedes implementar un método en `Program.cs` que lea ese JSON y llene los servicios al iniciar.
 
 ========================================
-🛠 REQUISITOS DEL SISTEMA
+REQUISITOS DEL SISTEMA
 ----------------------------------------
 - Visual Studio 2022
 - .NET 6 SDK instalado
 - Navegador web para probar Swagger (Chrome, Edge, etc.)
 
 ========================================
-📌 NOTAS ADICIONALES
+NOTAS ADICIONALES
 ----------------------------------------
 - Las estructuras de datos están implementadas desde cero en C#.
 - El sistema funciona totalmente en memoria (no usa base de datos).
 - El archivo XML de comentarios se genera automáticamente para Swagger.
 
 ========================================
-👨‍💻 DESARROLLADOR
+DESARROLLADOR
 ----------------------------------------
-Nombre del estudiante: _______________________
+Nombre del estudiante: Javier y Ada
 Carné: _______________________
